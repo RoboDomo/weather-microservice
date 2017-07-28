@@ -1,0 +1,32 @@
+{
+  "name": "weather-microservice",
+  "version": "1.0.0",
+  "description": "MQTT microservice for Nest thermostat weather data Edit",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autodomo/weather-microservice.git"
+  },
+  "keywords": [
+    "MQTT",
+    "Nest",
+    "Weather",
+    "Weather",
+    "autodomo"
+  ],
+  "author": "Michael Schwartz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autodomo/weather-microservice/issues"
+  },
+  "homepage": "https://github.com/autodomo/weather-microservice#readme",
+  "dependencies": {
+    "debug": "^2.6.8",
+    "microservice-core": "github:autodomo/microservice-core",
+    "superagent": "^3.5.2"
+  }
+}
