@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build --no-cache -t weather-microservice .
+docker build --no-cache -t autodomo/weather-microservice .
