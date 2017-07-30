@@ -1,11 +1,11 @@
-process.env.DEBUG='WeatherHost,HostBase'
+process.env.DEBUG = 'WeatherHost,HostBase'
 
-const debug    = require('debug')('WeatherHost'),
-      Config   = require('./config'),
-      request  = require('superagent'),
-      HostBase = require('microservice-core/HostBase')
+const debug = require('debug')('WeatherHost'),
+    Config = require('./config'),
+    request = require('superagent'),
+    HostBase = require('microservice-core/HostBase')
 
-const POLL_TIME = 60        // in seconds
+const POLL_TIME = 60 * 5        // in seconds
 
 function ctof(c) {
     return Math.round(c * (9 / 5) + 32)
@@ -14,7 +14,7 @@ function ctof(c) {
 class WeatherHost extends HostBase {
     constructor(zip) {
         const host = Config.mqtt.host,
-              topic = Config.mqtt.topic
+            topic = Config.mqtt.topic
 
         debug('constructor', topic, zip)
         super(host, topic + '/' + zip)

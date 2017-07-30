@@ -15,7 +15,7 @@ module.exports = {
         topic: process.env.topic || 'weather',
     },
     weather : {
-        locations: process.env.locations ? process.env.locations.split(',') : [
+        locations: process.env.WEATHER_LOCATIONS ? process.env.WEATHER_LOCATIONS.split(',') : [
             '92211',    // Palm Desert CA, it's HOT!!!
         ]
     },
