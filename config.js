@@ -2,7 +2,7 @@ module.exports = {
     mqtt:  {
         // host where mqtt server resides
         // You can add an entry to this server's /etc/hosts to point
-        // the name 'ha' at the mqtt server, or set the MQTTHOST env
+        // the name 'ha' at the mqtt server, or set the MQTT_HOST env
         // variable with your mqtt connect string.
         host:  process.env.MQTT_HOST || 'mqtt://ha',
         // This is the base of the topic used to publish/subscribe.
