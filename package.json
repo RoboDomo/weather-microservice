@@ -9,24 +9,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/autodomo/weather-microservice.git"
+    "url": "git+https://github.com/robodomo/weather-microservice.git"
   },
   "keywords": [
     "MQTT",
     "Nest",
     "Weather",
     "Weather",
-    "autodomo"
+    "robodomo"
   ],
   "author": "Michael Schwartz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/autodomo/weather-microservice/issues"
+    "url": "https://github.com/robodomo/weather-microservice/issues"
   },
-  "homepage": "https://github.com/autodomo/weather-microservice#readme",
+  "homepage": "https://github.com/robodomo/weather-microservice#readme",
   "dependencies": {
     "debug": "^2.6.8",
-    "microservice-core": "github:autodomo/microservice-core",
+    "microservice-core": "github:robodomo/microservice-core",
     "superagent": "^3.5.2"
   }
 }

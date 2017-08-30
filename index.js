@@ -1,4 +1,4 @@
-process.env.DEBUG = 'WeatherHost,HostBase'
+process.env.DEBUG = 'WeatherHost'
 
 const debug = require('debug')('WeatherHost'),
     Config = require('./config'),
