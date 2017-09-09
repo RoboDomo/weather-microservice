@@ -39,6 +39,7 @@ class WeatherHost extends HostBase {
               resolve(JSON.parse(res.text))
             }
             catch (e) {
+              console.dir(e.stack)
               reject(e)
             }
           }
@@ -68,6 +69,7 @@ function main() {
   const hosts = {}
 
   Config.weather.locations.forEach((zip) => {
+    debug('starting', zip)
     hosts[zip] = new WeatherHost(zip)
   })
 }
