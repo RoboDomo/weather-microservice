@@ -20,7 +20,7 @@ To run it:
 ```
 $ docker run \
     -d \
-    -e "locations=one-or-more-zip-codes-separated-by-commas"
+    -e "WEATHER_LOCATIONS=one-or-more-zip-codes-separated-by-commas"
     --rm \
     --name="weather-microservice"
     weather-microservice
