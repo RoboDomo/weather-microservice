@@ -4,6 +4,13 @@ MQTT  microservice for Nest Thermostat Weather Information
 This microservice queries the Nest Weather API for one or more zip codes
 and bridges the data to MQTT
 
+# DEPRECATIN WARNING
+In their infinite wisdom, Google has merged Nest into Google proper and has announced the impending end of their
+"works with nest" program.  Thus the API this microservice relies upon is likely to be terminated and this 
+microservice rendered obsolete.
+
+See here.com-microservice for a much improved weather provider/solution.
+
 ## Docker build instructions
 You can neatly package this microservice as a Docker container:
 
