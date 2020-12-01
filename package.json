@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/robodomo/weather-microservice#readme",
   "dependencies": {
-    "debug": "^2.6.9",
+    "debug": "^4.3.1",
     "microservice-core": "github:robodomo/microservice-core",
-    "superagent": "^3.8.2"
+    "superagent": "^6.1.0"
   }
 }
