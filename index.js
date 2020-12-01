@@ -1,4 +1,5 @@
 process.env.DEBUG = "WeatherHost";
+process.title = process.env.TITLE || "weather-microservice";
 
 const debug = require("debug")("WeatherHost"),
   Config = require("./config"),
@@ -47,7 +48,7 @@ class WeatherHost extends HostBase {
               reject(err);
             } else {
               try {
-                debug("results", res.text);
+                debug(this.zip, "results", res.text);
                 resolve(JSON.parse(res.text));
               } catch (e) {
                 console.log("JSON exception", e.stack, e);
